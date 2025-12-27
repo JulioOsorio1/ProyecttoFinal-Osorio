@@ -6,7 +6,7 @@ const ItemDetail = ({ item }) => {
 
   const handleAddToCart = (cantidad) => {
     console.log(`Agregaste ${cantidad} ${item.nombre}(s) al carrito`);
-    // Aquí puedes conectar con tu carrito global o contexto
+  
   };
 
   return (
