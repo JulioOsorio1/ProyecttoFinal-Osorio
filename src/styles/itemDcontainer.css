@@ -1,0 +1,24 @@
+
+.item-detail-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-detail-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.item-detail-container p {
+  font-size: 16px;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+.item-detail-container p strong {
+  color: #2c3e50;
+}

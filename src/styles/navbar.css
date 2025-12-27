@@ -1,0 +1,124 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 0.8rem 3rem;
+  border-bottom: 1px solid #e0e0e0; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar-logo img {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #0a66c2; 
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #0a66c2;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-links a {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.navbar-links .dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.navbar-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* color de fondo */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.navbar-links .dropdown-menu li {
+  padding: 10px 15px;
+}
+
+
+.navbar-links .dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.navbar-links .dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
