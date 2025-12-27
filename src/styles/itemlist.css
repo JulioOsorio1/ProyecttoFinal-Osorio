@@ -12,7 +12,7 @@
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
-  /* animación */
+  
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.6s ease forwards;
