@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     setLoading(true);
 
-    // Simulación de carga
+  
     setTimeout(() => {
       const foundItem = bovinos.find((animal) => animal.id === parseInt(id));
 
